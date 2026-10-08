@@ -1,0 +1,27 @@
+<div class="form-container">
+
+<form [formGroup]="qaForm" (ngSubmit)="submit()">
+    <div class="form-group">
+        <label for="question">Enter qusetion:
+        </label>
+                    <input type="text" id="question" formControlName="question" [value]="editData()?.Qusetion" >
+
+     @if (qaForm.get('question')?.touched && qaForm.get('question')?.invalid) {
+        <small class="error-text">enter a question plase</small>
+      }
+    </div>
+     <div class=form-group>
+        <label for="answer">Enter answer:
+        
+        </label>
+                    <input type="text" id="answer" formControlName="answer" [value]="editData()?.Answer">
+
+         @if (qaForm.get('answer')?.touched && qaForm.get('answer')?.invalid) {
+        <small class="error-text">enter answer</small>
+      }
+      
+    </div>
+    <button>submit</button>
+
+</form>
+</div>

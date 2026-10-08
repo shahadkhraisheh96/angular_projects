@@ -1,0 +1,10 @@
+{
+  "data": [
+    {
+      "id": "2",
+      "Qusetion": "hhhhhh",
+      "Answer": "aaaaaaa"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

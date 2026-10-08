@@ -1,0 +1,77 @@
+table {
+  width: 90%;
+  margin: 24px auto;
+  border-collapse: collapse;
+  font-family: inherit;
+  font-size: 17px;
+  background-color:antiquewhite;
+  color: palevioletred;
+  box-shadow: 0 2px 10px ;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+table caption {
+  caption-side: top;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px 0;
+  color: var(--text);
+  text-align: center;
+
+}
+
+ thead {
+  background-color:rgba(229, 220, 208, 0.71);
+  color: rgb(183, 79, 114);
+}
+
+ thead th {
+  padding: 8px 10px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  height: 3rem;
+    font-size: 25px;
+
+}
+
+tbody tr {
+  transition: background-color 0.2s ease;
+    height: 4rem;
+
+}
+
+ tbody tr:hover {
+  
+  background-color:rgba(208, 195, 179, 0);
+ }
+ tbody td {
+  padding: 6px 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: palevioletred;
+  font-size: 25px;
+    height: 4rem;
+
+}
+
+tbody td {
+  font-weight: 700;
+  color: palevioletred;
+}
+button{
+    width: 6rem;
+    height: 2rem;
+    border: none;
+    background-color: palevioletred;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(213, 151, 172);
+}
+

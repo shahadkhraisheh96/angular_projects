@@ -1,0 +1,24 @@
+<button routerLink="/add">add</button>
+<div class="tabel-wrapper">
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Qusetion</th>
+        <th>Answer</th>
+        <th>delete</th>
+        <th>update</th>
+
+    </thead>
+    <tbody>
+        @for (item of faq() ; track $index) {
+           <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.Qusetion}}</td>
+            <td>{{item.Answer}}</td>
+            <td><button (click)="Delete(item.id)">Delete</button></td>
+            <td><button [routerLink]="['/update',item.id]">Update</button></td>
+            </tr>
+}
+    </tbody>
+</table>
+</div>
