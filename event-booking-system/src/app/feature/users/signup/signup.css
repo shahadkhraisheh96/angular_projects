@@ -1,0 +1,109 @@
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    background-color: #ffdab399;
+    padding: 2rem;
+    border: 1px solid transparent;
+}
+
+section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2.6rem;
+    color: #574964;
+    font-weight: 900;
+    text-align: center;
+}
+
+.auth-form {
+    margin-block-end: 1rem;
+}
+
+.auth-form-item {
+    display: flex;
+    margin-block-end: 1rem;
+    flex-direction: column;
+}
+
+
+.auth-form-item input {
+    height: 40px;
+    margin-top: 0.5rem;
+    padding: 0 10px;
+    border: 1px solid #574964;
+    border-radius: 10px;
+}
+
+.auth-form-item input.ng-invalid.ng-dirty, .auth-form-item input.ng-invalid.ng-touched {
+    border-color: red;
+}
+
+.auth-form-item p {
+    color: red;
+}
+.alert-danger{
+        color: red;
+        border: 1px solid red;
+        padding: 0 .4rem;
+        border-radius: 10px;
+        margin-top: -10rem;
+        margin-bottom: 1rem;
+
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #574964;
+}
+
+button > svg {
+    margin-right: 10px;
+}
+
+button.auth-form-button {
+    background-color: #574964;
+    color: white;
+    font-weight: 700;
+}
+
+button.auth-button {
+    background-color: white;
+    border: 1px solid black;
+}
+
+section, button.auth-button, button.auth-form-button {
+    border-radius: .5rem;
+}
+.login-signup-message{
+    text-align: center;
+    color: #574964;
+    font-weight: 800;
+}
+.login-signup-message a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+span{
+    color: red;
+}
+
+

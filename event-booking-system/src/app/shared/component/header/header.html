@@ -1,0 +1,24 @@
+<header>
+    <div class="logo">
+        <a routerLink="/events">Event Booking System</a>
+    </div>
+
+    <div class="nav-link">
+        <ul>
+            <li><a routerLink="/events" routerLinkActive="active">Events</a></li>
+            <li><a routerLink="/bookings" routerLinkActive="active">Booking</a></li>
+        </ul>
+    </div>
+
+    <div class="header-btn">
+        @if (isLoggedIn()) {
+            <div class="user-info">             
+                <mat-icon class="mat-icon" routerLink="/user">account_circle</mat-icon>
+                <p routerLink="/user"><span>{{ currentUser()?.displayName }}</span></p>
+                <button class="btn" (click)="logout()">Logout</button>
+            </div>
+        } @else {
+            <button class="btn" routerLink="/login">Login</button>
+        }
+    </div>
+</header>
